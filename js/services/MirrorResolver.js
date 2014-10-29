@@ -63,8 +63,8 @@ angular.module('DuckieTV.providers.mirrorresolver', [])
         var parser = new DOMParser();
         var doc = parser.parseFromString(result.data, "text/html");
         var result = doc.querySelector("#searchResult > tbody > tr:nth-child(1) > td:nth-child(2) > a:nth-child(2)");
-        return result && result.href && result.href.indexOf('magnet') == 0;
-    }
+        return result && result.href;
+    };
 
     /** 
      * When a Kickass Torrent test search has been executed, verify that at least one magnet link is available in the
@@ -74,8 +74,8 @@ angular.module('DuckieTV.providers.mirrorresolver', [])
         var parser = new DOMParser();
         var doc = parser.parseFromString(result.data, "text/html");
         var result = doc.querySelector('table.data tr > td:nth-child(1) > div.iaconbox.floatright > a.imagnet.icon16');
-        return result && result.href && result.href.indexOf('magnet') == 0;
-    }
+        return result && result.href;
+    };
 
 
     /**

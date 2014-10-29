@@ -22,7 +22,7 @@ angular.module('DuckieTV.providers.settings', [])
             'series.displaymode': 'poster',
             'storage.sync': true,
             'sync.progress': true,
-            'thepiratebay.mirror': 'https://thepiratebay.se',
+            'thepiratebay.mirror': 'http://www.piraattilahti.org',
             'topSites.enabled': true,
             'topSites.mode': 'onhover',
             'torrenting.autodownload': false,
